@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <nav>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        <ul class = main-nav>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- mailto:user@host.com testing purposes-->
+        <form class = "form" id = "form" action="https://formspree.io/mjvojpnz" onsubmit="return validate()" method="post">
+          <h2>Contact</h2>
+          <div class="form-control">
+            <label for="username">Full Name</label>
+            <input type="text" placeholder="Jacob McKay" id = username name = "username">
+            <img src="images/check.ico" id ="check" alt="">
+            <img src="images/exclamation.ico" id = "error" alt="">
+            <small>Error Message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="email">Email Address</label>
+            <input type="email" placeholder="domain@email.com" id = email name = "replyto">
+            <img src="images/check.ico" id ="check" alt="">
+            <img src="images/exclamation.ico" id = "error" alt="">
+            <small>Error Message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="number">Mobile Number</label>
+            <input type="text" placeholder="082 123 4567" id = number maxlength="10" name = "mobile-number">
+            <img src="images/check.ico" id ="check" alt="">
+            <img src="images/exclamation.ico" id = "error" alt="">
+            <small>Error Message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="country">Country</label>
+            <select id = "country" name = "country">
+              <option value="South Africa">South Africa</option>
+              <option value="Australia">Australia</option>
+              <option value="United State of America">United State of America</option>
+              <option value="United Kingdom">United Kingdom</option>
+            </select>
+            <img src="images/check.ico" id ="check" alt="">
+            <img src="images/exclamation.ico" id = "error" alt="">
+            <small>Error Message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea id="message" cols="30" rows="4" placeholder = "Type message here" name = "message"></textarea>
+            <img src="images/check.ico" id ="check" alt="">
+            <img src="images/exclamation.ico" id = "error" alt="">
+            <small>Error Message</small>
+          </div>
+          <button type="submit">Submit</button>
+          
+        </form>
+      </div>
+
+      <script src="validate.js"></script>
+    <footer>Copyright | &copy Tyron Aricum 2020 </footer>
+    <script src="app.js"></script>
+</body>
+</html>

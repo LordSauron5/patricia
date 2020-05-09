@@ -1,0 +1,161 @@
+.main-nav{
+    border-bottom: solid 5px crimson;;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: rgba(109, 27, 12, 0.849);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+    padding: 30px 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(85, 20, 8, 0.849);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    width: 600px;
+    max-width: 100%;
+}
+
+form h2{
+    text-align: center;
+    color:  #f0f3f4 ;
+	font-size: 35px;
+	text-shadow: 5px 5px 10px #811f1f;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: inherit; /*switching to inherit fixes the nav, but then errors dont show*/
+    color:  #f0f3f4 ;
+	font-size: 15px;
+	text-shadow: 5px 5px 10px #811f1f;
+}
+
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+.form-control input:focus {
+    outline: 0;
+    transition: all 1s ease-out;
+    border-color: rgb(11, 230, 219);
+}
+
+.form-control input:hover {
+    transition: all 1s ease-out;
+    border-color: rgb(11, 230, 219);
+}
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e93825;
+}
+
+
+.form-control.form-control.success img#check{
+    visibility: visible;
+}
+
+.form-control.form-control.error img#error{
+    visibility: visible;
+}
+
+.form-control img{
+    visibility: hidden;
+    position: relative;
+    float: right;
+    top: -32px;
+    right: 5px;
+    z-index: 0;
+}
+
+
+.form-control small{
+    visibility: hidden;
+    position: inherit;
+    top: 5px;
+}
+
+.form-control.error small{
+    visibility: visible;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    font-weight: bold;
+    color: #e24b3b;
+}
+
+.form select{
+    border-radius: 4px;
+    border: 2px solid #f0f0f0;
+    color: #000000;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form textarea{
+    border-radius: 4px;
+    border: 2px solid #f0f0f0;
+    color: #000;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form button{
+    border-color: rgb(251, 69, 63);
+    background: rgb(251, 107, 63);
+    border-radius: 4px;
+    color: rgb(209, 209, 209);
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.4s ease;
+}
+
+.form button:hover{
+    font-style: oblique;
+    background: rgb(253, 135, 0);
+    color: #FFF;
+    border-radius: 10px;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
